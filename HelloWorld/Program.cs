@@ -45,6 +45,91 @@ namespace HelloWorld
             double _double = 5.5;
             decimal _decimal = 5.5m;
 
+            //Metinsel değişkenler
+            char _char = 'M';
+            string _string = "lk lkadsakdja dlşkja lşjfd ş lk k k k k l şl fşajaoıg joıjrogıerjg aoerıgarıg aşoregı aoşırgarşogı jargşoa g şaırjga şoerııor gjaergş ıj arg şaoıreg oıarıj";
+
+            bool _bool = true;
+            _bool = false;
+            _bool = 3 > 2;
+
+            _string = _int + " adet";
+
+            _int = _sbyte;
+            _sbyte = Convert.ToSByte(_int);
+
+            object _obje = _int;
+            _obje = true;
+            _obje = 34m;
+
+            decimal a = 4 + (Convert.ToDecimal(4.4) * (2 - 4m));
+
+            Console.WriteLine(a);
+
+            //Çizim işlemleri
+            //5x5 kare
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    Console.Write("X");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("Bir sayı giriniz");
+            int girilenSayi = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < girilenSayi; i++)
+            {
+                for (int j = 0; j < girilenSayi; j++)
+                {
+                    Console.Write("X");
+                }
+                Console.WriteLine();
+            }
+
+
+            Console.WriteLine("Bir sayı giriniz içi boş için");
+            girilenSayi = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < girilenSayi; i++)
+            {
+                for (int j = 0; j < girilenSayi; j++)
+                {
+                    if (i == 0 | i == girilenSayi - 1 | j == 0 | j == girilenSayi - 1)
+                    {
+                        Console.Write("X");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("Bir sayı giriniz üçgen için");
+            girilenSayi = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= girilenSayi; i++)
+            {
+                for (int j = 1; j <= girilenSayi + i - 1; j++)
+                {
+                    if (j <= girilenSayi - i)
+                    {
+                        Console.Write(" ");
+                    }
+                    else
+                    {
+                        Console.Write("X");
+                    }
+
+                }
+                Console.WriteLine();
+            }
+            //Tarihi işlemleri
+            DateTime suankiZaman = DateTime.Now;
+            DayOfWeek gun = suankiZaman.DayOfWeek;
+            Console.WriteLine(gun);
 
             Console.Read();
         }
