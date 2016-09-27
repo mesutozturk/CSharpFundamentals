@@ -18,6 +18,7 @@ namespace HelloWorld
             //Veri tipleri
             //T A = D
 
+
             /*
              * değişken isimleri sayı ile başlamaz
              * sistemde tanımlı olan nesneler değişken adı olarak kullanılamaz
