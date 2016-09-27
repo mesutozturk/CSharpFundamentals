@@ -39,6 +39,13 @@ namespace HelloWorld
             uint _uint = 4242342343;
             long _long = 23984729384;
             ulong _ulong = 223984729384;
+
+            //Reel sayılar
+            float _float = 5.5f;
+            double _double = 5.5;
+            decimal _decimal = 5.5m;
+
+
             Console.Read();
         }
     }
